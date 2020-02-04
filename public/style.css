@@ -1,9 +1,13 @@
 html {
   font-family: serif;
+  height: 100%;
 }
 
 body {
-  background-color: hotpink;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 nav {
@@ -18,20 +22,74 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
+  text-decoration: underline;
 }
 
 nav li {
   list-style: none;
   font-size: 1.5em;
   display: inline-flex;
-  padding-right: 1rem;
+  padding-right: 3rem;
+  color: white;
 }
 
 h1 {
   font-size: 5em;
   text-align: center;
   font-family: sans-serif;
+}
+
+h1.neon {
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+}
+
+div.film_header {
+  padding-top: 2rem;
+}
+
+h1.white {
+  color: white;
+  padding-top: 6rem;
+}
+
+div.home_title {
+  justify-content: center;
+  line-height: 2em;
+  padding-top: 6rem;
+}
+
+div.film_details {
+  text-align: center;
+  color: white;
+}
+
+div.film_details h2 {
+  font-size: 3em;
+  padding-top: 2rem;
+}
+
+div.film_details h3 {
+  font-size: 2em;
+}
+
+div.banner img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 div.film_list {
@@ -43,6 +101,7 @@ div.film_list li {
   font-size: 3em;
   list-style: none;
   padding-bottom: 4rem;
+  color: white;
 }
 
 div.film_list li a {
@@ -51,5 +110,5 @@ div.film_list li a {
 }
 
 div.film_list li a:hover {
-  color: white;
+  color: aqua;
 }

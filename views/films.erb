@@ -1,9 +1,12 @@
-<h1>FILM LIST</h1>
+<div class="film_header">
+  <h1 class="neon">FILM LIST</h1>
+</div>
+
 
 <div class="film_list">
   <ul>
   <% for film in @films %>
-    <li><a href="films/<%= film.title %>"><%= film.title.upcase %></a></li>
+    <li><a href="/films/<%= film.id %>"><%= film.title.upcase %></a></li>
   <% end %>
   </ul>
 </div>

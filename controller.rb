@@ -18,5 +18,6 @@ get "/films" do
 end
 
 get "/films/:id" do
+  @film = Film.film_by_id(params[:id])
   erb(:film_details)
 end
