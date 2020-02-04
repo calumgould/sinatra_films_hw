@@ -1,0 +1,55 @@
+html {
+  font-family: serif;
+}
+
+body {
+  background-color: hotpink;
+}
+
+nav {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.5em;
+  display: inline-flex;
+  padding-right: 1rem;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+div.film_list {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+div.film_list li {
+  font-size: 3em;
+  list-style: none;
+  padding-bottom: 4rem;
+}
+
+div.film_list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.film_list li a:hover {
+  color: white;
+}

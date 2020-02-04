@@ -7,3 +7,16 @@ require_relative("./models/film")
 require_relative("./models/screening")
 require_relative("./models/ticket")
 also_reload("./models/*")
+
+get "/" do
+  erb(:home)
+end
+
+get "/films" do
+  @films = Film.all()
+  erb(:films)
+end
+
+get "/films/:id" do
+  erb(:film_details)
+end
